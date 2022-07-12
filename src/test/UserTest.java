@@ -1,4 +1,4 @@
-package test;
+/*package test;
 
 import static org.junit.Assert.*;
 import org.junit.AfterClass;
@@ -52,3 +52,4 @@ public class UserTest {
 	}
 
 }
+*/
