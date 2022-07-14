@@ -24,7 +24,7 @@ import javax.persistence.UniqueConstraint;
 @Table(name = "items", uniqueConstraints = @UniqueConstraint(columnNames = "name"))
 @NamedQueries({
 	@NamedQuery(name ="Items.findAll" , query="SELECT i FROM Items i ORDER BY i.iditem"),
-	@NamedQuery(name ="Items.countAll" , query ="SELECT COUNT(*) FROM Items i "),
+	@NamedQuery(name ="Items.countAll" , query ="SELECT COUNT(*) FROM Items i"),
 	@NamedQuery(name ="Items.findByName", query="SELECT i FROM Items i WHERE i.name = :name"),
 	@NamedQuery(name ="Items.findByCategory", query="SELECT i FROM Items i JOIN Category c ON i.category.idcategory = c.idcategory AND c.idcategory = :idcategory"),
 	@NamedQuery(name ="Items.countByCategory", query="SELECT COUNT(i) FROM Items i WHERE i.category.idcategory = :idcategory")

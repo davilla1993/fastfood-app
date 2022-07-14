@@ -13,6 +13,7 @@ public class OrderDao extends JpaDao<Order> implements GenericDao<Order> {
 	public Order create(Order order) {
 		order.setOrderDate(new Date());
 		order.setStatus("Processing...");
+		
 		return super.create(order);
 	}
 
